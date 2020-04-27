@@ -2,9 +2,6 @@
 /*from extra small and small screens*/
 @media (max-width:767px){ 
   
-
-
-
  p{
  	font-size: 18px;
  	line-height: 25px;
@@ -27,7 +24,7 @@ h6{
 }
 /*home title */
  .txtposition{
-	left: 30px;
+	left: 110px;
     top: 400px;
     background-color:#fff;
     width: 400px;

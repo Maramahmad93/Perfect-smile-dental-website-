@@ -82,7 +82,7 @@
         
          <h5 class=" Rockf text" style="color:#6497b1">Lorem ipsum is placeholder text </h5> 
         <h5 class=" Rockf text " style="color:#6497b1">commonly used in the graphic.</h5> 
-          <button type="button" class="btn btn-outline-secondary my-3 mx-auto font-weight-bold" > <i class="fas fa-phone" ></i>  Call US</button>
+          <button type="button" class="btn btn-outline-secondary my-3 mx-auto font-weight-bold" onclick="popUp()" > <i class="fas fa-phone" ></i>  Call US</button>
         </div>
       </div>
     </div>
@@ -92,12 +92,12 @@
     <div class="row my-1">
       <div class="col-lg-3 my-5 emergencybg ">
         <h5 class="playf">EMERGENCY CASE</h5>
-        <i class="fas fa-ambulance my-1 fa-2x px-5 py-1" ></i>
+        <i class="fas fa-ambulance my-1 fa-2x px-5 py-1"  onclick="emergency()" ></i>
         <p class="futuraf">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
       </div>
-      <div class="col-lg-3 my-5 emergencybg ">
+      <div class="col-lg-3 my-5 emergencybg xx  ">
         <h5 class="playf ">APPOINTMENT</h5>
-        <i class="fas fa-calendar-check my-1 fa-2x px-5 py-1"></i>
+        <i class="fas fa-calendar-check my-1 fa-2x px-5 py-1" onclick="appointment()"></i>
         <p class="futuraf">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
       </div>
       <div class="col-lg-3 my-5 emergencybg ">
@@ -801,9 +801,257 @@
               <div class="col-md-5 col-lg-4 ml-lg-0">
               </div>
             </div> 
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+   <!-- pop up javascript code  -->
+
+   <div class="popup">
+     <div class="popup-content">
+      <div>
+       <i class=" close fas fa-window-close" onclick="close()" ></i>
+     </div>
+
+     <div class="container ">
+      <div class="row">
+       <div class="col-lg-12" style="align-items: center;" >
+        <h5 class="mb-4">Please press any Number to call: </h5>
+        <button class=" btnpop d-block mb-2 number " >
+         <h4 onclick="callNumber()">+962 777 8777</h4>
+       </button> 
+    <button class=" btnpop d-block mb-2  number" >
+         <h4 onclick="callNumber()" >+962 797 9777</h4>
+       </button>  
+   <button class=" btnpop d-block mb-2 number">
+         <h4 onclick="callNumber()" >+962 787 8999</h4>
+       </button>            
+     </div>
+   </div>
+ </div>
+</div>  
+</div>
+</div>
+
+
+
+<div class="popup2 popup">
+  <div class="popup-content">
+   <i class=" close2 fas fa-window-close close" onclick="close()" ></i>
+   <h4>Thank you For contact</h4>
+ </div>
+</div>
+
+
+
+
+<!-- Appointment -->
+<div class="popup3 popup" >
+  <div>
+
+     <i class=" close3 fas fa-window-close" onclick="close()"  ></i>
+  </div>
+  <div class="popup-content" style="height:405px;bottom:-409px;" >
+<form class="needs-validation" novalidate>
+   <h5 class="pb-3">Make an Appointment</h5>
+ <div class="form-row container">
+    <div class="col-md-5 mb-3">
+      <label for="validationTooltip01" style="text-align: left">Patient Name:</label>
+      <input type="text" class="form-control"  value="Your Name" required>
+    </div>
+  <div class="col-md-5 mb-3">
+      <label for="validationTooltip02">Last name:</label>
+      <input type="text" class="form-control"  value="Last Name" required style="width: 200px;">
+      </div>
+  </div>
+ <div class="form-row container">
+  <div class="col-md-5 mb-3">
+      <label for="validationTooltip03">Phone Number:</label>
+         <input type="text" class="form-control" id="validationTooltip01" value="Phone Number" required>
+    </div>
+<div class="col-md-5 mb-3">
+    <label for="validationTooltip03">Email:</label>
+          <input type="email" class="form-control" id="validationTooltip01" value=" Enter yor email" required style="width: 200px;">
+     </div>
+  </div>
+ <div class="form-row container">
+    <div class="col-md-6 mb-3">
+       <label for="validationTooltip04">Select an Appointemnt Date:</label>
+        <input type="date" class="form-control" name="Appointment Date" onchange="getday()">
+      </div>
+   <div class="col-md-6 mb-3">
+   <div id="day">Check Day Available</div>
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-12">
+         <button class="mb-2 " style="width:60px">1 PM</button>
+         <button class="mb-2"  style="width:60px">2 PM</button>
+         <button class="mb-2"  style="width:60px">3 PM</button>
+         <button class="mb-2"  style="width:60px">4 PM</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+</div>
+</div>
+
+
+
+<!-- Emergency Case -->
+<div class="popup4 popup">
+<div class="popup-content">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+         <fieldset >
+  <legend>
+  Emergency contact number
+  </legend>
+      <i class=" fas fa-window-close close4"   ></i>
+      <button>+962 79 888 8888</button>     
+    </div>
+     <fieldset>
+  </div> 
+</div>
+</div>
+ </div>
+
+
+   <!--Online Help  -->
+<div class="popup">
+   <div class="popup-content">
+   <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <fieldset>
+  <legend>
+  <h5>Online Help </h5>
+  </legend>
+  <i class=" close3 fas fa-window-close" onclick="close()"  ></i>
+       <form>
+      
+       <h6>Enter your name </h6>
+        <input type="text" name="Name" style="width:200px;">
+        <h6>Enter Your Email</h6>
+        <input type="text" name="Email" style="width: 200px;">
+        <h6>Enter your question?</h6>
+       <textarea style="width:200px;">Enter your question</textarea>
+       <button>Submit</button>
+      </form>
+          </fieldset>
+     </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="popup">
+<div class="popup-content">
+<div class="container">
+  <i class=" close3 fas fa-window-close" onclick="close()"  ></i>
+<h3>Information</h3>
+<h5>
+  Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups
+</h5>
+  
+</div>
+ </div>
+</div>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+            <script type="text/javascript">
+           //to make popup packgrund for page
+           function popUp(){
+           document.querySelector(".popup").style.display= "flex";
+           }   
+
+           document.querySelector(".close").addEventListener("click", function(){
+           document.querySelector(".popup").style.display = "none"; 
+     
+           })
+
+
+
+          //choose any number and call us
+           function callNumber(){
+                 document.querySelector(".popup").style.display = "none";
+                  document.querySelector(".popup2").style.display= "flex";      
+
+           }
+             document.querySelector(".close2").addEventListener("click", function(){
+           document.querySelector(".popup2").style.display = "none"; 
+     
+           })
+
+
+
+           function appointment(){
+             document.querySelector(".popup3").style.display= "flex";
+           } 
+        
+        
+          document.querySelector(".close3").addEventListener("click", function(){
+           document.querySelector(".popup3").style.display = "none"; 
+     
+           })
+
+          function emergency(){
+             document.querySelector(".popup4").style.display= "flex";
+           } 
+
+           document.querySelector(".close4").addEventListener("click", function(){
+           document.querySelector(".popup4").style.display = "none"; 
+     
+           })
+        
+
+
+
+
+          
+
+
+
+
+
+         /*  document.querySelector(".xx").addEventListener("click", function(){
+           document.querySelector(".popup2").style.display = "none"; 
+     
+           })*/
+           
+      /*     setTimeout(time(){
+           document.getElementById("popup2").style.display ="none";
+           }, 3000);*/
+
+
+           
+
+          /*document.querySelector(".appoin").addEventListener("click", function(){
+           document.querySelector(".popup3").style.display = "none"; 
+     
+           })*/
+
+
+           function getday() {
+  var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var n = weekday[d.getDay()];
+  document.getElementById("day").innerHTML = n;
+}
+
+
+            </script>
           </body>
           </html>
           <!-- https://www.pngwave.com/png-clip-art-vckkv -->

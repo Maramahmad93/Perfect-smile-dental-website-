@@ -228,5 +228,72 @@ height:420px;
   background-color: #33ccff !important;
 }
 
-/*#b3daff*/
-/*http://www.e-hospitalservices.net/
+/*Pop up content and Background*/
+.popup-content{
+  height: 250px;
+  width: 500px;
+  background-color:#fff;
+  padding:20px;
+  border-radius:5px;
+  position: relative;
+
+}
+
+.popup{
+/*  background-color:lightgrey;*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+
+.btnpop{
+
+
+}
+
+.close{
+  position     : absolute;
+  top          : -15px;
+  right        :-15px;
+  background   :#fff;
+  height       :20px;
+  width        :20px;
+  border-radius:50%;  
+ cursor: pointer;
+}
+
+
+.close3{
+    position     : absolute;
+     bottom: 153px;
+ /*   right: 186px;*/
+ left:1000px;
+    background   :#fff;
+  height       :23px;
+  width        :23px;
+  border-radius:50%;  
+ cursor: pointer;
+
+}
+
+.number{
+      position: relative;
+    left: 129px;
+    background:#6497b1;
+    border-radius:7px;
+}
+
+.close4{
+
+}
+
+.popup4{
+  
+}

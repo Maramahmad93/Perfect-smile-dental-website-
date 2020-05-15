@@ -4,25 +4,24 @@
 }
 
 .Rockf{
-      font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
 }
 
 .futuraf{
   font-family: 'Futura-Bold', arial; 
 }
 
-/*Text colour*/
+
 .pinktext{
-   color:#6497b1;      
+ color:#6497b1;      
 }
 .whitetext{
 	color:#fff;
 }
 .blacktext{
-    color:#000;
+  color:#000;
 }
 
-/*Nav bar */
 .navbar{
   background-color: #D4E7ED;
 }
@@ -30,50 +29,44 @@
 	font-size:30px;
 	color:#000;
 }
-.navbar-light .navbar-brand:hover{
-
-
-}
 
 .navbar-light .navbar-nav .nav-link {
 	color:#000;	
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-background-color:#000;
-color:#fff;
+  background-color:#000;
+  color:#fff;
 
 }
 .navbar-light .navbar-nav .active > .nav-link{
 	color:#000;
 }
 .navbar-light .navbar-nav .active > .nav-link:hover{
-background-color:#000;
-color:#fff;
+  background-color:#000;
+  color:#fff;
 }
 
 
 /*Home Page */
 .bghome {
   height:115vh;
-background-image: url('../imgs/new-5.png');
- background-size: cover;
- background-position: left;
- background-repeat: no-repeat;
- background-position: fixed;
- margin-left: 500px;
-
-
+  background-image: url('../imgs/new-5.png');
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  margin-left: 500px;
 }
+
 .txtposition {
-    margin: -20px;
-    position: absolute;
-    left: 186px;
-    bottom:235px;
+  margin: -20px;
+  position: absolute;
+  left: 186px;
+  bottom:235px;
 }
 
 .btn-outline-secondary {
- 
   border: 1px solid #b3cde0;
   position: absolute;
   left: 64px;
@@ -84,30 +77,26 @@ background-image: url('../imgs/new-5.png');
 }
 
 .btn-outline-secondary:hover{
-	
 	border:2px solid #fff;
 	color:#fff;
 	background-color: #000;
 
 }
-/*Contact in home page*/
+
+
 .contactbg{
  background-color:  #b3cde0;
-color:#000;
-position: relative; 
-top:-123px;
-}
-.emergencybg:hover{
-background-color:#fff ;
-color: #000;
+ color:#000;
+ position: relative; 
+ top:-123px;
 }
 
 .bgabout1{  
-    background-color: #6497b1;
-    width: 421px;
-    height: 500px;
-    top: 42px;
-    left: -119px;
+  background-color: #6497b1;
+  width: 421px;
+  height: 500px;
+  top: 42px;
+  left: -119px;
 }
 
 .bgabout2{
@@ -120,115 +109,102 @@ color: #000;
 }
 
 .imgstyle{
-     border:1px solid #000;
+ border:1px solid #000;
 }
 
 .imgstyle:hover{
-     background-color: red;
-     opacity: 0.7;
+ background-color: red;
+ opacity: 0.7;
 }
 
 /*Meet Our specalist Dentist */
 .bggallery{
 
   background-image: url('../imgs/tools.jpg');
-
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- background-attachment:fixed;
- height:100vh;
-
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  height:100vh;
 }
 
 /*Dental Services*/
- .servicesimg{
- 	width: 200px;
- 	height: 200px;
- 	border-radius: 50%;
- 	border: 2px solid #fff;
+.servicesimg{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #fff;
   align-items: center;
- }
+}
+
 /*Carousel indicators*/
 .carousel-indicators li {
-   
-   height:20px;
-   width: 20px;
+  height:20px;
+  width: 20px;
   border-radius: 50% ; 
   background-color: #000;
 }
 .carousel-indicators .active {
   width: 25px;
-   height: 25px;
+  height: 25px;
   background-color: #fff;
 }
 
 /*change the colour for previous and next images (carousel )*/
 .carousel-control-next-icon {
 	left:100px;
-    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%343A40' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%343A40' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 .carousel-control-prev-icon {
-    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%343A40' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%343A40' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
 /*Contact us */
 .bordercontactbg{
 	width: 100%;
-	
-	  background-color:#f5f5f0;
-	  border:1px double #000;
+  background-color:#f5f5f0;
+  border:1px double #000;
 }
 
 
 .insidecontactbg{
-
-	border:2px solid #000;
+  border:2px solid #000;
 }
+
 /*Social Media Icons */
 .fab:hover{
-  
-   color:#000;
- 
+ color:#000;
 }
 
-/*https://www.pngwave.com/png-clip-art-dfznm/download
-https://www.color-hex.com/color-palette/204*/
-
-
-/*social Media Colours */
 .face{
   color:#3b5998;
 }
+
 .twitter{
   color:#00acee;
 }
+
 .instagram{
   color:#FF67C6;
-
 }
 
 .card-img-overlay{
   top: 240px;
   background-color:#eeeeee;
   opacity: 0.7;
-
 }
 
 .scroll{
-width: 1200px;
- overflow-y: auto;
-/* white-space: nowrap;
-*/
-display: block;
-height:420px;
-
+  width: 1200px;
+  overflow-y: auto;
+  display: block;
+  height:420px;
 }
+
 .bg-primary {
   background-color: #33ccff !important;
 }
 
-/*Pop up content and Background*/
 .popup-content{
   height: 250px;
   width: 500px;
@@ -236,11 +212,9 @@ height:420px;
   padding:20px;
   border-radius:5px;
   position: relative;
-
 }
 
 .popup{
-/*  background-color:lightgrey;*/
   width: 100%;
   height: 100%;
   position: absolute;
@@ -252,48 +226,44 @@ height:420px;
   display: none;
 }
 
-
-.btnpop{
-
-
-}
-
 .close{
-  position     : absolute;
-  top          : -15px;
-  right        :-15px;
-  background   :#fff;
-  height       :20px;
-  width        :20px;
+  position: absolute;
+  top : -15px;
+  right:-15px;
+  background:#fff;
+  height:20px;
+  width :20px;
   border-radius:50%;  
- cursor: pointer;
+  cursor: pointer;
 }
-
 
 .close3{
-    position     : absolute;
-     bottom: 153px;
- /*   right: 186px;*/
+ position:absolute;
+ bottom:180px;
  left:1000px;
-    background   :#fff;
-  height       :23px;
-  width        :23px;
-  border-radius:50%;  
+ background :#fff;
+ height :23px;
+ width :23px;
+ border-radius:50%;  
  cursor: pointer;
-
 }
 
 .number{
-      position: relative;
-    left: 129px;
-    background:#6497b1;
-    border-radius:7px;
+  position: relative;
+  left: 129px;
+  background:lightgrey;
+  border-radius:7px;
 }
+
 
 .close4{
-
+  position: absolute;
+  left: 477px;
+  top: -29px;
 }
 
-.popup4{
-  
+.makeApp{
+  height:455px;
+  bottom:-409px;
 }
+

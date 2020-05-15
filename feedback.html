@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+	<style type="text/css">
+		body{
+			margin:100px;
+			background: lightgrey;
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<form class="needs-validation" novalidate>
+		<fieldset>
+              <legend >
+              	   <h5 class="pb-3 text-left pl-5">Make Feedback</h5>
+               
+              </legend>
+          
+             <div class="form-row container">
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip01" style="text-align: left">Your Name:</label>
+                <input type="text" class="form-control"  value="Your Name" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip02">Last name:</label>
+                <input type="text" class="form-control input"  value="Last Name" required>
+              </div>
+            </div>
+            <div class="form-row container">
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip03">Phone Number:</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="Phone Number" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip03">Email:</label>
+                <input type="email" class="form-control input" id="validationTooltip01" value=" Enter your email" required>
+              </div>
+            </div>
+
+            <div class="col-md-10 mb-3">
+              <label for="validationTooltip03">Your Message:</label>
+              <textarea class="form-control" id="inputtext" rows="3"  placeholder="Enter your Message" onfocus="changeColorText()" style="width:734px" ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" onclick="clickBtn()">Submit form</button>
+          </div>
+<fieldset >
+</body>
+</html>
